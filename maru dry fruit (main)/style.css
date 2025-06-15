@@ -1,0 +1,852 @@
+body{
+
+    background-image: url();
+     /* koi chi lage to daal do warna muje to white color acha laga */
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@font-face {
+    font-family: font;
+    src: url(vertopal.com_uK_24rSEd-Uqwk4jY1RyKvi8Ww.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    transition: all .3s linear;
+}
+
+#main #page1 {
+    height: 70vw;
+    width: 100%;
+    text-align: center;
+    font-size: 4.4vw;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+    background-color: transparent;
+}
+
+#main #page1 .bg-image {
+   
+    width: 100%;
+    height: 100%;
+
+    
+
+}
+
+#main #page1 .bg-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#main #page1 .text-2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 3.5vw;
+    letter-spacing: 0.05rem;
+    text-transform: inherit;
+}
+
+#main #page1 .text-2 h2 {
+    font-family: font;
+    font-weight: 100;
+    color: white;
+}
+
+#main #page1 .text-2 h3,
+#main #page1 .text-2 h4 {
+    color: rgb(255, 187, 0);
+    font-weight: lighter;
+}
+
+#main #page1 .text-2 h4 span {
+    color: white;
+}
+
+#main #page1 .text-2 .line {
+    margin-top: 1.3vw;
+}
+
+#main #page1 .text-2 .line-2 {
+    margin-top: 0.85;
+}
+
+
+/* BEST PRODUCT */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+
+.product {
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding-bottom: 20px;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px gold;
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.scroll-btn {
+  padding: 10px 20px;
+  background-color: #c9a86b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #a88347;
+}
+
+#coffee, #tea {
+  margin-top: 60px;
+  transition: opacity 0.8s ease;
+}
+
+.product h2 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: white;
+}
+
+.product p {
+  margin: 10px 20px;
+  font-size: 16px;
+  color: #bbb;
+}
+
+.product-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding-bottom: 20px;
+  height: 45vh;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px gold;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: white;
+}
+
+.product-card p {
+  margin: 10px 20px;
+  font-size: 16px;
+  color: #bbb;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ae8757;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+/* page 1 start  */
+.hero{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(images/hero-1.png);
+    filter: contrast(150%) brightness(90%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    display: flex;
+
+}
+.hero-img img{
+    width: 100%;
+    height: auto;
+}
+.hero-text {
+    font-size: var(--big-font);
+    font-weight: 900;
+    margin: 15px 0;
+    color: rgb(18, 18, 18);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+.hero-text h5{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+} 
+.hero-text p{
+    
+    max-width: 620px;
+    width: 100%;
+    
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    /* try */
+    font-size: 2rem !important ;        
+  color: #f1f0ef;        
+  text-align: center;       
+  font-weight: 500;         
+  line-height: 1.6;         
+
+}
+.main-hero{
+    display: flex;
+    align-items: center;
+}
+.btn-1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffd700;
+    color: #000;
+    transform: translateY(-10px);
+    text-decoration: none;
+    display: inline-block;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 40px 80px;
+    border-radius: 10px;
+    font-size: 1.8rem; 
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Initial shadow */
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .btn-1:hover,
+  .btn:active {
+    box-shadow: 0 0 25px 10px goldenrod; /* Glowing light effect */
+    transform: translateY(-12px); /* Slight lift on hover */
+  }
+
+
+/* Page 2 */
+
+#main #page2 {
+    padding: 7vw;
+    background-color: transparent;
+   
+}
+
+#main #page2 .box1 {
+    margin-bottom: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#main #page2 .box1 h1 {
+    font-family: font;
+    font-weight: 100;
+    font-size: 4vw;
+    color: rgb(136, 65, 39);
+}
+
+#main #page2 .box1 .stars #second {
+    font-size: 2vw;
+}
+
+#main #page2 .box1 .stars #first {
+    color: rgb(255, 187, 0);
+}
+
+#main #page2 .card-0 {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#main #page2 .card-0 .card {
+    height: 26.3vw;
+    width: 15vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 0;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0.85 rgba(0, 0, 0, 0.2);
+}
+
+#main #page2 .card-0 .card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + .7vw);
+    height: 0;
+    background-color: rgb(255, 187, 0);
+    z-index: -2;
+    transition: all .3s linear;
+}
+
+#main #page2 .card-0 .card:hover::after {
+    height: calc(100% + .7vw);
+}
+
+#main #page2 .card-0 .card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: calc(100% + .7vw);
+    background-color: rgb(136, 65, 39);
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+#main #page2 .card-0 .card:hover::before {
+    width: 100%;
+}
+
+#main #page2 .card-0 .card .img {
+    width: 100%;
+    height: 10vw;
+    background-size: cover;
+    background-position: center;
+}
+
+#main #page2 .card-0 .card .text-3 {
+    font-size: 2.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4vw;
+}
+
+#main #page2 .card-0 .card .text-3 h4 {
+    font-family: font;
+    font-weight: 100;
+    color: rgb(136, 65, 39);
+    font-size: 2.5vw;
+}
+
+#main #page2 .card-0 .card .text-3 p {
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+#main #page2 .card-0 .card .text-3 .rating {
+    display: flex;
+    justify-content: center;
+    gap: .2vw;
+}
+
+#main #page2 .card-0 .card .text-3 .rating i {
+    font-size: 1.2vw;
+}
+
+
+/* Page 3 */
+#main #page3 {
+    background-image: url('https://img.freepik.com/free-photo/top-view-different-nuts-with-raisins-dried-fruits-grey-desk-nut-snack-hazelnut-walnut-peanut_140725-64631.jpg?t=st=1749934550~exp=1749938150~hmac=623c2d8aeaa8362d46ea74ddb1025779fc6a4433e16df4a3370b2260b93cba9d&w=826')  ; 
+    background-size: cover;
+    background-position: center;
+    height: 52.5vw;
+    width: 100%;
+    padding: 8vw 1vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+}
+.page3-in{
+background-color: transparent !important ;
+width: 33vw;
+position: absolute;
+left: 11vw;
+}
+
+#main #page3 h4 {
+    color: #0a0a0a;
+    font-size: 1.8vw;
+    margin-bottom: 0.7vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main #page3 h1 {
+    font-size: 5vw;
+    font-family:  'cursive';
+    font-weight: 400;
+    color: rgb(255, 187, 0);
+    margin: 0.5vw 0;
+}
+
+#main #page3 .buttons {
+    margin-top: 3vw;
+}
+
+#main #page3 .button-3,
+#main #page3 .button-4 {
+    border: 0.17vw solid rgb(14, 13, 13);
+    background-color: transparent;
+    color: rgb(7, 7, 7);
+    padding: 1.2vw 2vw;
+    font-size: 1.5vw;
+    margin: 0 0.8vw;
+    border-radius: 2.6vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#main #page3 .button-3:hover,
+#main #page3 .button-4:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+
+/* Page 4 */
+
+#main #page4 {
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vw 8vw;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main #page4 .right {
+    width: calc(100% - 1vw);
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#main #page4 .right .img-sec {
+    width: calc(50% - 1vw);
+    height: calc(50% - 1vw);
+    
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 2vw;
+}
+
+#main #page4 .right .img-sec .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .3s linear all;
+    z-index: 1;
+}
+
+#main #page4 .right .img-sec:hover .after {
+    width: 100%;
+}
+
+#main #page4 .right .img-sec .right-div {
+    width: 15.7vw;
+    padding: 1vw;
+    height: 12.6vw;
+    background-color: rgba(184, 179, 179, 0.9);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+    position: absolute;
+    right: 29%;
+    bottom: 29%;
+    border-radius: 1vw;
+
+
+}
+
+#main #page4 .right .img-sec .right-div h1 {
+    color: white;
+    font-family: font;
+    font-weight: 100;
+    font-size: 2vw;
+}
+#main #page4 .right .img-sec .right-div p {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+#main #page4 .right .img-sec .right-div .button-right {
+    border: 0.17vw solid rgb(136, 65, 39);
+    background-color: transparent;
+    color: white;
+    padding: 1.15vw 1.75vw;
+    display: inline-block;
+    font-size: 1.4vw;
+    cursor: pointer;
+    border-radius: 2.6vw;
+}
+
+#main #page4 .right .img-sec .right-div .button-right:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;   
+}
+
+
+
+/* Page 5 */
+
+#page5 {
+    height: 80vh;
+    width: 100%;
+    
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#page5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    z-index: 2;
+}
+
+#page5 h1 {
+    padding-top: 4.4vw;
+    color: rgb(235, 205, 15);
+    font-size: 5.25vw;
+    font-family: font;
+    font-weight: 100;
+    z-index: 3;
+}
+
+#page5 .buttons {
+    z-index: 4;
+    display: flex;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+#page5 .buttons button {
+    border: 0.17vw solid white;
+    background-color: transparent;
+    color: rgb(170, 145, 145);
+    padding: 1.15vw 1.75vw;
+    display: inline-block;
+    font-size: 1.75vw;
+    cursor: pointer;
+    border-radius: 2.6vw;
+}
+
+#page5 .buttons button:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+
+
+
+
+/* OUR TEAM MEMBERS */
+#main #page6 {
+    padding: 7vw;
+    background-color: white;
+}
+
+#main #page6 .box1 {
+    margin-bottom: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#main #page6 .box1 h1 {
+    font-family: font;
+    font-weight: 100;
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+}
+
+#main #page6 .box1 .stars #second {
+    font-size: 2vw;
+}
+
+#main #page6 .box1 .stars #first {
+    color: rgb(255, 187, 0);
+}
+
+#main #page6 .cards {
+    display: flex;
+    gap: 0.85;
+    justify-content: space-between;
+}
+
+#main #page6 .card-0 {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#main #page6 .card-0 .card {
+    height: 26.3vw;
+    width: 18vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: .2vw solid rgb(255, 187, 0);
+    transition: all .15s ease;
+}
+
+#main #page6 .card-0 .card:hover {
+    scale: 1.1;
+}
+
+#main #page6 .card-0 .card .top {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(255, 187, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main #page6 .card-0 .card .top .img {
+    width: 14.4vw;
+    height: 14.4vw;
+    border-radius: 50%;
+    background-color: rgb(255, 187, 0);
+    background-size: cover;
+}
+
+#main #page6 .card-0 .card .bottom {
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#main #page6 .card-0 .card .bottom h1 {
+    font-family: font;
+    font-weight: 100;
+    color: rgb(136, 65, 39);
+    font-size: 2vw;
+}
+
+#main #page6 .card-0 .card .bottom .icons {
+    display: flex;
+    height: 2.6vw;
+    width: 100%;
+    margin-top: 1.75vw;
+    justify-content: space-evenly;
+}
+
+
+
+/* Page 7 */
+
+#main #page7 {
+ 
+    padding: 7vw 0;
+}
+
+#main #page7 .box1 {
+    margin-bottom: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+#main #page7 .box1 h1 {
+    font-family: font;
+    font-weight: 100;
+    font-size: 4vw;
+    color: rgb(136, 65, 39);
+}
+
+
+
+#main #page7 .images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main #page7 .images .items {
+    width: 26.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75vw;
+}
+
+#main #page7 .images .items .chota-image {
+    background-size: cover;
+    height: 24.4vw;
+    width: 26.2vw;
+    border-radius: 10px;
+}
+
+#main #page7 .images .items h1 {
+    font-family: font;
+    font-weight: 100;
+    color: rgb(255, 217, 0)
+}
+
+#main #page7 .images .items p {
+    text-align: center;
+    font-size: 1.4vw;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+#main #page7 .images .items button {
+    border: 0.17vw solid rgba(133, 93, 78);
+    background-color: white;
+    color: black;
+    padding: 1.15vw 1.75vw;
+    font-size: 1.4vw;
+    cursor: pointer;
+    border-radius: 2.6vw;
+}
+
+#main #page7 .images .items button:hover {
+    border-color: rgb(255, 187, 0);
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+
+
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 200px;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: 'Web Developer';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: " ";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}

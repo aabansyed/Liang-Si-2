@@ -1,0 +1,337 @@
+@font-face {
+    font-family: font ;
+    src: url("vertopal.com_uK_24rSEd-Uqwk4jY1RyKvi8Ww.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    top: 0;
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.6vw;
+    background-color: black;
+}
+
+nav .nav-after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.17vw;
+    background-color: rgb(255, 187, 0);
+}
+
+nav a img {
+    height: 6.1vw;
+}
+
+nav .nav-btns {
+    display: flex;
+    gap: 1.75vw;
+    align-items: center;
+}
+
+nav .nav-btns a {
+    color: white;
+    position: relative;
+    font-size: 1.5vw;
+}
+
+nav .nav-btns a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.17vw;
+    left: 0;
+    width: 0;
+    height: 0.17vw;
+    background-color: rgb(255, 187, 0);
+    transition: width .2s linear;
+}
+
+nav .nav-btns a:hover::after {
+    width: 100%;
+}
+
+.current-page {
+    position: relative !important;
+}
+
+.current-page::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: -0.17vw !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 0.17vw !important;
+    background-color: rgb(255, 187, 0) !important;
+}
+
+nav .user {
+    display: flex;
+    gap: 1.75vw;
+    align-items: center;
+}
+
+
+
+
+
+nav .user i {
+    font-size: 1.5vw;
+}
+
+nav .user a {
+    display: flex;
+    align-items: center;
+}
+/* navbar clock css */
+@font-face {
+    font-family: "FX_LED";
+    src: url("fonts/FX_LED.TTF");
+}
+@font-face {
+    font-family: "Hack";
+    src: url("fonts/Hack-Bold.ttf");
+}
+
+.digital-clock{
+    width: 10vw;
+    height: 7vh;
+    background-color: #000000;
+    color: wheat;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+}
+.week{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "Hack";
+}
+.week .active{
+    color: white;
+}
+.time{
+    font-family: "FX_LED";
+}
+.hour,.min,.dot{
+    display: inline-block;
+    font-size: 13rem;
+}
+
+.min{
+    display: math;
+}
+.invisible{
+    visibility: hidden;
+}
+
+
+
+/* footer css */
+
+
+footer {
+    width: 100%;
+    height: 30.5vw;
+}
+
+footer .img {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    z-index: -1;
+}
+
+footer .img .footer-top {
+    margin-top: 4.4vw;
+    padding: 0 8.7vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.6vw;
+}
+
+footer .img .footer-top h2 {
+    font-size: 2.1vw;
+}
+
+footer .img p, footer .img a {
+    font-size: 1.4vw;
+}
+
+footer .img .footer-top .about {
+    z-index: 3;
+    width: 24.4vw;
+}
+
+footer .img .footer-top .about a {
+    color: rgb(255, 187, 0);
+}
+
+footer .img .footer-top .about .social-links {
+    display: flex;
+    gap: 1.75vw;
+}
+
+footer .img .footer-top .about .social-links i {
+    color: white;
+}
+
+
+
+footer .img .footer-top .support {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .img .footer-top .contact .footer-line {
+    display: flex;
+}
+
+footer .img .footer-top h2 {
+    color: rgb(255, 187, 0);
+    font-family: font;
+    font-weight: 100;
+    margin-bottom: 2.6vw;
+}
+
+footer .img .footer-bottom {
+    width: 100%;
+    padding: 1.3vw 8.7vw;
+    display: flex;
+    justify-content: space-between !important; 
+    border-top: 0.08vw solid rgb(231, 231, 231);
+    position: relative;
+}
+
+footer .img .footer-bottom .tabs {
+    display: flex;
+    gap: 1.75vw;
+}
+footer p i {
+    color: rgb(255, 187, 0);
+}
+
+
+
+
+footer .img p, footer .img a {
+    color: white !important;
+}
+
+
+.support a {
+  position: relative;
+  display: inline-block;
+  color: white; /* or your desired color */
+  text-decoration: none;
+  margin: 8px 0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.support a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 0%;
+  height: 3px; 
+  background-color: #f18930; 
+  transition: width 0.4s ease;
+}
+
+.support a:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+footer .img .footer-top .support {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+footer .img .footer-top h2 {
+    color: rgb(255, 187, 0);
+    font-family: font;
+    font-weight: 500;
+    margin-bottom: 2.6vw;
+}
+
+footer .img .footer-bottom {
+    width: 100%;
+    padding: 1.3vw 8.7vw;
+    display: flex;
+    justify-content: center;
+    border-top: 0.08vw solid rgb(231, 231, 231);
+    position: relative;
+}
+footer .img .footer-bottom p {
+    font-size: 1.4vw;
+    color: rgb(255, 187, 0);
+}
+footer .img p, footer .img a {
+    color: rgb(255, 255, 255);
+
+}
+footer .img .footer-bottom .tabs i {
+    color: rgb(255, 187, 0);
+    font-size: 1.4vw;
+   
+}
+.footer-bottom .tabs a{
+     color: rgb(255, 187, 0) !important ;
+    
+}
+.footer-bottom .tabs a:hover {
+    
+    text-decoration: underline;
+}
+.footer-bottom .copyright {
+    color: rgb(255, 187, 0) !important; 
+}
