@@ -1,0 +1,228 @@
+  * {
+
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+nav a {
+
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 6px 20px;
+    transition: .5s;
+}
+.header{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color:whitesmoke;
+    align-items: center;
+
+}
+
+#nav {
+    width: 75%;
+    display: flex;
+
+    justify-content: center;
+}
+#nav a:hover{
+
+    border: 1px solid  silver;
+border-bottom: 5px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+border-radius: 25px;
+}
+
+/* search */
+/* SEARCH  */
+
+.box {
+    width: 25%;
+}
+.box:hover input {
+    width: 40%;
+}
+
+.box input {
+    width: 38px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.box a .fa-solid {
+    color: #1daf;
+    font-size: 15px;
+    margin-right: 200px;
+}
+
+/* IMG.ANI */
+.content{
+    position: relative;
+    display: flex;
+margin-top: 75px;
+
+}
+
+.content h2:nth-child(1)
+{
+    color: transparent;
+-webkit-text-stroke: 2px #03a9f4;
+position: relative;
+margin-left: 160px;
+font-size: 80px;
+}
+.content h2:nth-child(2)
+{
+    
+    font-size: 80px;
+    margin-left: 160px;
+position: absolute;
+    color:  #03a9f4;
+animation: wow 4s ease-in-out infinite;
+}
+@keyframes wow 
+{
+
+0%,100%
+{
+    clip-path: polygon(76% 37%, 90% 34%, 100% 39%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0 66%, 39% 56%, 56% 51%);
+
+}
+50%
+{
+    clip-path: polygon(43% 53%, 61% 62%, 100% 61%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0 45%, 12% 37%, 26% 42%);}
+}
+
+/* imgg ani */
+swiper-container {
+    width: 60%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 60px;
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 550px;
+  }
+
+  swiper-slide img {
+    display: block;
+height: 100%;
+    width: 100%;
+  }
+  .intro{
+/* visibility: hidden; */
+font-size: 15px;
+font-weight: 800;
+width: 350px;
+height: 30px;  
+
+}
+.intro:hover{
+    margin-top: 50px;
+}
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  nav a {
+    font-size: 20px;
+    padding: 4px 10px;
+  }
+  .header {
+    padding: 5px 0px;
+  }
+  #nav {
+    width: 100%;
+  }
+  .box {
+    width: 50%;
+  }
+  .CONT {
+    margin-top: 50px;
+  }
+  .txt {
+    font-size: 2rem;
+  }
+  swiper-container {
+    width: 90%;
+    margin-left: 20px;
+  }
+  swiper-slide {
+    width: 200px;
+    height: 300px;
+  }
+  .intro {
+    width: 200px;
+  }
+
+
+
+  .content {
+    margin-top: 100px;
+    flex: auto;
+    justify-content: flex-start;
+  }
+  .swiper-container {
+    width: 90%;
+  }
+  .swiper-slide {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 60px;
+  }
+  .box {
+    width: 20%;
+  }
+
+/* Tablet Layout (380px - 746px) */
+@media only screen and (min-width: 380px) and (max-width: 746px) {
+  /* your existing media query styles remain the same */
+}
+
+/* Desktop Layout (747px - 1023px) */
+@media only screen and (min-width: 747px) and (max-width: 1023px) {
+  .header {
+    padding: 15px 0px;
+  }
+  nav a {
+    font-size: 22px;
+  }
+  .content h2:nth-child(1) {
+    font-size: 40px;
+  }
+  .content h2:nth-child(2) {
+    font-size: 40px;
+  }
+  #nav {
+    font-size: 18px;
+    width: 60%;
+  }
+  .content {
+    margin-top: 150px;
+  }
+  .swiper-container {
+    width: 70%;
+  }
+  .swiper-slide {
+    width: 300px;
+    height: 450px;
+    margin-bottom: 100px;
+  }
+  .box {
+    width: 25%;
+  }
+}
+}

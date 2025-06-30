@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="nuts.css">
+
+    <title>Pistachio</title>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+        <div class="mainContainer">
+            <div class="CONT">
+            <h1 class="txt"><span style="color: #CC581F;">PISTACHIO</span> 
+        </div>
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+
+  <swiper-slide>
+    <span class="intro" style="color: #D02A2A;">AFGHANI MAMRA</span>
+    <img src="https://img.freepik.com/free-photo/pistachio_1387-762.jpg" />
+    <p class="description">Afghani Mamra almonds are prized for their rich oil content and crunchy texture. Perfect for snacking and traditional recipes.</p>
+  </swiper-slide>
+
+  <swiper-slide>
+    <span class="intro" style="color:#F8D426;">CALIFORNIA ALMONDS</span>
+    <img src="https://img.freepik.com/free-photo/roasted-almonds-white-bowl_53876-42473.jpg?t=st=1751271265~exp=1751274865~hmac=3913092963c1cd1fc322638471c0c18b136d69342a3c898de77bc1a01b1d0f84&w=826" />
+    <p class="description">California almonds are widely popular for their size and mild flavor. Ideal for roasting or making almond milk.</p>
+  </swiper-slide>
+
+  <swiper-slide>
+    <span class="intro" style="color: #4E8A4C;">SPANISH MARCONA</span>
+    <img src="https://img.freepik.com/free-photo/almond-white-bowl-white-wooden-table-side-view_176474-1438.jpg?t=st=1751271466~exp=1751275066~hmac=eef57ea5bb22dcc98b0320eda035c54ec90cec6e5066bbf76c212e549cb220b6&w=826" />
+    <p class="description">Marcona almonds from Spain are sweeter and softer. Often used in gourmet cuisine and desserts.</p>
+  </swiper-slide>
+
+  <swiper-slide>
+    <span class="intro" style="color: #FF7775;">ROASTED ALMONDS</span>
+    <img src="https://img.freepik.com/free-photo/almond-bowl-wooden-board-black-stone-table-high-angle-view_176474-1425.jpg?t=st=1751271689~exp=1751275289~hmac=00841458a6bf17e78039beec10efaf4869430258f4bed35c801f11a4cc10402f&w=826" />
+    <p class="description">Roasted almonds offer a nutty, deep flavor and are a perfect healthy snack for any time of day.</p>
+  </swiper-slide>
+
+  <swiper-slide>
+    <span class="intro" style="color: #9CDBA6;">ALMOND SLICES</span>
+    <img src="https://img.freepik.com/free-photo/side-view-peeled-almonds-basket-newspaper_140725-9069.jpg?t=st=1751271811~exp=1751275411~hmac=19037b57a7f4df0dd470e417a6bbeee9c6f1eade5dceb4f7536977d5b7fb6a7d&w=826" />
+    <p class="description">Almond slices are great for baking, toppings, or adding crunch to salads and cereals.</p>
+  </swiper-slide>
+
+</swiper-container>
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+  <script>
+  const swiperEl = document.querySelector('.mySwiper');
+  Object.assign(swiperEl, {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      clickable: true
+    }
+  });
+  swiperEl.initialize();
+</script>
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+      
+</body>
+</html>
